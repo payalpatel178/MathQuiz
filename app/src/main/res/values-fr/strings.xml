@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Math Quiz</string>
+
+    <string name="strMathQuiz">Math Quiz</string>
+    <string name="strOne">1</string>
+    <string name="strTwo">2</string>
+    <string name="strThree">3</string>
+    <string name="strFour">4</string>
+    <string name="strFive">5</string>
+    <string name="strSix">6</string>
+    <string name="strSeven">7</string>
+    <string name="strEight">8</string>
+    <string name="strNine">9</string>
+    <string name="strDot">.</string>
+    <string name="strZero">0</string>
+    <string name="strMinus">-</string>
+    <string name="strGenerate">Générer</string>
+    <string name="strValidate">Valider</string>
+    <string name="strClear">Effacer</string>
+    <string name="strScore">Score</string>
+    <string name="strFinish">Terminer</string>
+
+    <string name="strYourResultsAndScore">Vos résultats et votre score</string>
+    <string name="strNoRecordsFound">Aucun enregistrement trouvé</string>
+    <string name="strAll">Toute</string>
+    <string name="strRight">Bonne</string>
+    <string name="strWrong">Mauvaise</string>
+    <string name="strSortA">Trier A</string>
+    <string name="strSortD">Trier D</string>
+    <string name="strRegister">S\'inscrire</string>
+    <string name="strShow">Montrer</string>
+    <string name="strBack">Retourner</string>
+</resources>

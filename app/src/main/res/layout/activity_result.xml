@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    android:background="#FFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_result_and_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/strYourResultsAndScore"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingTop="5sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radio_group_buttons"
+            android:paddingTop="10sp">
+
+            <RadioButton
+                android:id="@+id/radio_button_all"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/strAll"
+                android:textColor="#000"
+                android:checked="true"
+                android:onClick="showMe"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_right"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/strRight"
+                android:textColor="#000"
+                android:onClick="showMe"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_wrong"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/strWrong"
+                android:textColor="#000"
+               android:onClick="showMe"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_sort_asc"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/strSortA"
+                android:textColor="#000"
+                android:onClick="showMe"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_sort_desc"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/strSortD"
+                android:textColor="#000"
+                android:onClick="showMe"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:background="@drawable/result_shape"
+        android:padding="10sp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:divider = "#8E1F17"
+            android:dividerHeight = "5dp"
+            android:padding="10sp"/>
+
+        <TextView
+            android:id="@+id/empty"
+            android:text="@string/strNoRecordsFound"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@android:style/TextAppearance.Large"
+            android:gravity="center"
+            android:textColor="#8E1F17"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginBottom="20sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strRegister"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:id="@+id/edit_text_user_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:textStyle="bold">
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strScore"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/text_view_user_score"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:textStyle="bold">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp">
+
+                <Button
+                    android:id="@+id/button_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBack"
+                    android:textColor="#FFF"
+                    android:background="@drawable/back_button_selector"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:textAllCaps="false" />
+            </TableRow>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

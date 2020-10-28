@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Math Quiz</string>
+
+    <string name="strMathQuiz">Math Quiz</string>
+    <string name="strOne">1</string>
+    <string name="strTwo">2</string>
+    <string name="strThree">3</string>
+    <string name="strFour">4</string>
+    <string name="strFive">5</string>
+    <string name="strSix">6</string>
+    <string name="strSeven">7</string>
+    <string name="strEight">8</string>
+    <string name="strNine">9</string>
+    <string name="strDot">.</string>
+    <string name="strZero">0</string>
+    <string name="strMinus">-</string>
+    <string name="strGenerate">Generate</string>
+    <string name="strValidate">Validate</string>
+    <string name="strClear">Clear</string>
+    <string name="strScore">Score</string>
+    <string name="strFinish">Finish</string>
+
+    <string name="strYourResultsAndScore">Your Results and Score</string>
+    <string name="strNoRecordsFound">No records found</string>
+    <string name="strAll">All</string>
+    <string name="strRight">Right</string>
+    <string name="strWrong">Wrong</string>
+    <string name="strSortA">Sort A</string>
+    <string name="strSortD">Sort D</string>
+    <string name="strRegister">Register</string>
+    <string name="strShow">Show</string>
+    <string name="strBack">Back</string>
+</resources>
